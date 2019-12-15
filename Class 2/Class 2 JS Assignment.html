@@ -1,0 +1,500 @@
+<!-- JS Class 2 Assignment-->
+	<!-- If Else -->
+	<!-- Write a program to take “gender” as input from user. If the user is
+male, give the message: Good Morning Sir. If the user is female,
+give the message: Good Morning Ma’am.
+	 -->
+		<script type="text/javascript">
+
+            var a =prompt("Enter your Gender");
+            if ( a=="Male"|| a=="male" ) 
+            {
+            	alert("Good Morning Sir");
+
+            }
+              if (a=="Female" || a=="female") {
+            	alert("Good Morning Ma’am");
+            }
+            else
+            {
+
+            }
+
+
+  
+
+	</script>
+
+<script type="text/javascript">
+	var b =prompt("Enter a character string of length 1:");
+
+if (b =="a" || b=="A "|| b=="e" || b=="E"|| b=="i"|| b=="I"||b=="o"||b=="O"|| b=="u"||b=="U") 
+{
+	document.write("true" + "<br>");
+}
+else
+{
+	document.write("false" + "<br>");
+	
+}
+</script>
+
+<!-- Write a program to take input color of road traffic signal
+from the user & show the message according to this:
+Red = Must stop
+Yellow = Ready to move
+Green = Move now
+-->
+<script type="text/javascript">
+	
+var color =prompt("Enter color of road traffic Signal");
+if (color=="Red") 
+{
+	alert("Must Stop");
+}
+else if (color=="Yellow") 
+{
+	alert("Ready to Move");
+}
+else if (color=="Green") 
+{
+	alert("Move now");
+}
+
+</script>
+<!--Write a program that takes input a number from
+user & state whether the number is positive,
+negative or zero.
+-->
+
+<script type="text/javascript">
+	var num = parseInt(prompt("Enter a number"));
+	if ( num >0) 
+	{
+		document.write("positive number" + "<br>");
+	}
+	else if (num < 0) 
+	{
+		document.write("negative number" + "<br>");
+	}
+	else if (num==0) 
+	{
+		document.write("Number is Zero" +"<br>");
+	}
+
+</script>
+<!-- What will be the output in variables a, b & result after execution of the
+following script:
+var a = 2, b = 1;
+var result = --a - --b + ++b + b--;
+--a;
+--a - --b;
+--a - --b + ++b;
+--a - --b + ++b + b--;
+-->
+<script>
+	var a =2, b=1;
+/*	var result = --a;
+	document.write(result); Result will be 1*/ 
+/*var result=	--a -  --b;
+document.write(result); Result will be 1*/
+/*var result= --a - --b + ++b;
+document.write(result); Result will be 2*/
+var result= --a - --b + ++b + b--;
+document.write(result); /* Result will be 3 */
+
+
+</script>
+<!-- Math Expression Celcisu to Farenheit -->
+<script type="text/javascript">
+
+function calculateTemp() {
+   function celToFah(celsius) {
+      var fahrenheit = Math.round((celsius * (9/5)) + 32);
+      return fahrenheit;
+   }
+    function fahToCel(fahrenheit) {
+      var celsius = Math.round((fahrenheit - 32) * (5/9));
+      return celsius;
+   }
+
+
+   var tempSelected = document.getElementById("temp_diff");
+   var valueTemp = tempSelected.options[tempSelected.selectedIndex].value;
+
+ 
+   var numberTemp = document.getElementById("temp").value;
+
+   var result;
+   
+   if (valueTemp == 1) {
+      result = celToFah(numberTemp);
+      document.getElementById("resultContainer").innerHTML = "= " + result + "°Fahrenheit";
+   } else {
+      result = fahToCel(numberTemp);
+      document.getElementById("resultContainer").innerHTML = "= " + result + "°Celsius";
+   }
+   
+}
+      
+</script>
+<form id="tempCalc" onsubmit="calculateTemp(); return false">
+   <label for="temp">Please enter the temperature you'd like to convert.</label> <br>
+   <input name="temp" id="temp" type="number"> 
+   <select name="temp_diff" id="temp_diff">
+      <option value="1">°Celsius</option>
+      <option value="2">°Fahrenheit</option>
+   </select> <br>
+   <input name="temp" type="submit"> <br>
+   <span id="resultContainer"></span>
+</form>
+<!-- Comparison Operators -->
+
+<script type="text/javascript">
+	var correctpassword="abc123";
+	var confirm=prompt("Enter your Password");
+	if (correctpassword==confirm) 
+	{
+		alert("Correct! The password you entered matches the original password");
+	}
+	else
+	{
+		alert("Incorrect Password");
+	}
+</script>
+<!-- Testing sets of Condition -->
+<script type="text/javascript">
+	var time =parseInt(prompt("Enter time"));
+	if (time >= 0000 && time<1200) 
+	{
+		alert("Good morning");
+	}
+	else if (time>=1200 && time<1700) 
+	{
+		alert("Good Afternoon");
+	}
+	else if (time>=1700 && time<2100) 
+	{
+		alert("Good Evening");
+	}
+	else if (time>=2100 && time<=2359)
+	 {
+	 	alert("Good Night");
+	 }
+</script>
+<!-- Arrays -->
+
+<script type="text/javascript">
+	var student = new Array(3);
+	student[0] ="Michael";
+	student[1]="John";
+	student[2]="Tony";
+
+	var score = new Array(3);
+	score[0]="320";
+	score[1]="230";
+	score[2]="480";
+
+	document.write("Score of" + " "+ student[0]+ " " + "is" + " " + score[0] + " "+ "Percentage:64%" + "<br>" +
+		"Score of" + " "+ student[1]+ " " + "is" + " " + score[1] + " "+ "Percentage:46%" + "<br>" +
+		"Score of" + " "+ student[2]+ " " + "is" + " " + score[2] + " "+ "Percentage:96%" + "<br>");
+
+
+</script>
+<!-- For Loop -->
+<script type="text/javascript">
+	var number =parseInt(prompt("Enter any number to print table"));
+	for (var i = 1; i <=15; i++) {
+		document.write(number + "*"+ i + "="+ number*i + "<br>" );
+	}
+</script>
+<!-- Arrays: adding and removing elements
+Arrays: removing, inserting, and extracting elements -->
+<script type="text/javascript">
+var color = ['Green', 'Yellow'];
+document.write("Array elements before adding color" + "<br>");
+document.write(color + "<br>");
+
+var add = prompt("Add color");
+color.unshift(add); 
+document.write("Array elements After adding color" + "<br>");
+document.write(color + "<br>");
+
+var end=prompt("Enter color to add at the end of the array");
+color.push(end);
+document.write("Adding Color at the end" + "<br>");
+document.write(color + "<br>");
+
+document.write("Adding 2 more colors at the beginning" + "<br>");
+color.unshift("Purple","Maroon");
+document.write(color + "<br>");
+
+document.write("Deleting first elements" + "<br>");
+color.shift();
+document.write(color +"<br>");
+
+document.write("Deleting Last elements" + "<br>");
+color.pop();
+document.write(color + "<br>");
+
+
+document.write("Inserting" +"<br>");
+var insert=prompt("which index you wants to add a color?");
+var col=prompt("What color you want to add?");
+color.splice(insert, 0, col);
+document.write(color + "<br>");
+
+
+document.write("Deleting" +"<br>");
+var insert=prompt("which index you wants to Remove a color?");
+var col=prompt("how many colors you want to Remove?");
+color.splice(insert, col);
+document.write(color + "<br>");
+
+
+</script>
+<!-- Write a program to initialize an array with city names. Copy 3 array
+elements from cities array to selectedCities array -->
+<script type="text/javascript">
+var city =['Karachi', 'Lahore','Islamabad'];
+
+var selectedarr=[];
+selectedarr=city.copyWithin(0,2,0);
+document.write(selectedarr + "<br>");
+</script>
+<!-- Declare and initialize a multidimensional array representing the
+cities of different countries.-->
+<script type="text/javascript">
+   var cities= new Array ();
+        cities[0] = new Array ("<p><b> Pakistan: </b>", "Lahore", "Islamabad");
+        cities[1] = new Array ("<p><b> Uk: </b>", "Manchester", "Bradford");
+        cities[2]= new Array("<p><b> America: </b>","Newjersey","Lol Angeles");
+         for (var i = 0; i <cities.length; i++) 
+         {
+         	for (var j = 0; j<cities.length; j++)
+         	 {
+         		document.write(cities[i][j] + " ");
+
+         	}
+         document.write("<br>");
+         }
+</script>
+<!-- Counting Series-->
+<script type="text/javascript">
+	document.write("Counting"+ "<br>");
+	for (var i = 0; i <=15; i++)
+	 {
+	 	document.write(i + " ");
+	 }
+	 document.write("<br>");
+
+	 /* Reverse Counting */ 
+	 document.write("Reverse Counting"+ "<br>");
+var j = 10;
+while (j > 0) {
+    document.write(j + " ");
+    j--;
+
+}
+document.write("<br>");
+
+	</script>
+<!--Even -->
+<script>
+	document.write("Even Numbers"+ "<br>");
+for(i=0; i<=20; i++){
+
+ 
+  if(i % 2 == 0){
+    document.write(i + " ");
+  }
+ 
+}
+document.write("<br>");
+
+document.write("Odd Numbers"+ "<br>");
+for(j=1; j<=20; j++){
+
+ 
+  if(j % 2!= 0){
+    document.write(j + " ");
+  }
+}
+document.write("<br>");
+
+document.write("Series"+ "<br>");
+for(l=1; l<=20; l++){
+
+ 
+  if(l % 2 == 0){
+    document.write(l +"k" + " ");
+  }
+ 
+}
+document.write("<br>");
+</script>
+<!-- Array -->
+<script type="text/javascript">
+	var arr=['apple', 'orange', 'banana', 'graps', 'mango'];
+	var value =parseInt(prompt("Stop value"));
+	arr.splice(value);
+	document.write(arr);
+
+
+
+ var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+    var search=prompt("Enter value");
+  
+    if(fruits.indexOf(search) !=-1)
+    {
+        alert("Value exists!");
+    } else{
+        alert("Value does not exists!");
+    }
+
+document.write("<br>");
+
+</script>
+<!--Largest number -->
+
+<script type="text/javascript">
+	document.write("Largest Number" + "<br>");
+	var array = [3, 4, 5, 50, 21, 9];
+var largest = 0;
+
+    for (i=0; i<array.length; i++) {
+    if (array[i]>largest) {
+        console.log(largest + " " + array[i]);
+        largest = array[i];
+    }
+}
+document.write(largest);
+
+ 
+
+
+</script>
+<script type="text/javascript">
+	var array = [3, 4, 5, 50, 21, 9];
+	var largest=0;
+	 for (j=0; j<array.length; j++) {
+    if (array[j]<largest) {
+        console.log(largest + " " + array[j]);
+        largest = array[j];
+    }
+}
+document.write(largest + "<br>");
+</script>
+
+
+
+<script type="text/javascript">
+	var input= prompt("enter value");
+	 var i, j;
+  
+  for(i=input;i>=1;i--)
+   {
+  
+    for(j=1;j<=i;j++)
+   {
+     document.write('*');
+    }
+     document.write('<br/>');
+   }
+</script>
+<script type="text/javascript">
+	var input= prompt("enter value");
+	 var i, j;
+  
+  for(i=1;i<=input;i++)
+   {
+  
+    for(j=1;j<=5;j++)
+   {
+     document.write('*');
+    }
+     document.write('<br/>');
+   }
+</script>
+<script type="text/javascript">
+	var i, j;
+  
+  for(i=1; i <= 5; i++)
+   {
+
+    for(j=1; j<=i; j++)
+   {
+     document.write('*');
+    }
+     document.write('<br/>');
+   }
+document.write("<br>");
+</script>
+<script type="text/javascript">
+	
+
+	 var i, j;
+  
+  for(i=5;i>=1;i--)
+   {
+  
+    for(j=1;j<=i;j++)
+   {
+     document.write('*');
+    }
+     document.write('<br/>');
+   }
+document.write("<br>");
+</script>
+
+
+
+<script type="text/javascript">
+	
+
+ 
+  for(i=1; i <= 5; i++)
+   {
+
+    for(j=1; j<=i; j++)
+   {
+     document.write('*');
+    }
+     document.write('<br/>');
+   }
+
+	 var k, l;
+  
+  for(k=5;k>=1;k--)
+   {
+  
+    for(l=1;l<=k;l++)
+   {
+     document.write('*');
+    }
+     document.write('<br/>');
+   }
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+	
+
+
+
+</body>
+</html>
