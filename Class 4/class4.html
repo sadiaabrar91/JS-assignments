@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+function greeting (name) {
+    alert('Hello ' + name);
+}
+var personsName = 'Joe';
+greeting(personsName );
+</script>
+<script>
+/* Local Variable */
+function local()
+{
+var a;
+a="Local Variable";
+document.write(a +"<br>");
+}
+local();
+
+/* Global Variable */
+
+var b;
+b="Global Variable";
+function global()
+{
+document.write(b);
+}
+global();
+</script>
+
+<script>  
+var grade='B';  
+var result;  
+switch(grade){  
+case 'A':  
+result="A Grade";  
+break;  
+case 'B':  
+result="B Grade";  
+break;  
+case 'C':  
+result="C Grade";  
+break;  
+default:  
+result="No Grade";  
+}  
+document.write(result +"<br>");  
+</script>
+
+
+<script>  
+document.write("do while loop" + "<br>");
+var i=21;  
+do{  
+document.write(i + "<br/>");  
+i++;  
+}
+while (i<=25);  
+</script>
+
+<script>  
+document.write("While loop" + "<br>");
+var i=11;  
+while (i<=15)  
+{  
+document.write(i + "<br/>");  
+i++;  
+}  
+</script>
+</body>
+</html>  
+

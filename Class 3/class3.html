@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var str = prompt("Enter your Weight");
+		var integar=parseInt(str);
+		document.write(integar + "<br>");
+         var str2 = prompt("Enter your Weight in decimal");
+		var floatt= parseFloat(str2);
+		document.write(floatt + "<br>");
+var str3 = prompt("Enter your Weight in string");
+		document.write(str3 + "<br>");
+
+	</script>
+
+	<script type="text/javascript">
+		var a=parseInt("472");
+		document.write(a + "<br>");
+		var d = typeof a;
+		document.write(d + "<br>");
+		
+	</script>
+	<script type="text/javascript">
+		var d = 35.36;
+         var s = d + '';
+          s =s.replace('.', '');
+           s = parseInt(s);
+          document.write(s  + "<br>");
+
+
+	</script>
+	<script type="text/javascript">
+		
+		var percentage = 30 / 45 * 100; 
+		var dec= percentage.toFixed(2);
+		document.write(dec + "<br>");
+	</script>
+	<script type="text/javascript">
+		var d = new Date();
+	
+
+		document.write(d);
+	</script>
+
+<script>
+var inp = prompt("Enter any letter");
+var result=inp.toUpperCase();
+document.write(result + "<br>");
+</script>
+
+<script>
+var r= prompt("Enter input");
+function titleCase(string) {
+      var sentence = string.toLowerCase().split(" ");
+      for(var i = 0; i< sentence.length; i++){
+         sentence[i] = sentence[i][0].toUpperCase() + sentence[i].slice(1);
+      }
+   document.write(sentence.join(" "));
+   return sentence;
+   }
+   titleCase(r);
+</script> 
+<script>
+ var input =prompt("Enter input");
+
+    var userpattern =/^[a-zA-Z0-9]+$/;
+if( userpattern.test(input))
+{
+alert("True");
+}
+else
+{
+alert("Username should only contain numbers and letters ");
+}
+//occurrence of string
+</script>
+<script>
+ var temp = "the quick brown fox jumps over the lazy dog";
+var count = (temp.match(/the/g) || []).length;
+document.write(count);
+</script>
+
+<script>
+var pak = "Pakistani"
+var result= pak.charAt(3);
+document.write(result);
+</script>
+<script>
+var str= "Hyderabad"
+
+  var res = str.replace("Hydera", "Islama");
+  document.write(res);
+</script>
+<script>
+var message = "Ali and sami are best friends.They play cricket and football together";
+var replac = message.replace(/and/g, "&");
+document.write(replac);
+
+</script>
+
+<script>
+var input= prompt("Enter any positive number");
+var r =Math.round(input);
+document.write("Result of Round" +"<br>");
+document.write(r + "<br>");
+document.write("Result of Floor" +"<br>");
+r= Math.floor(input);
+document.write(r + "<br>");
+document.write("Result of Ceil" +"<br>");
+r= Math.ceil(input);
+document.write(r);
+
+</script>
+
+
+<script>
+var input= prompt("Enter any Negative number");
+if(input <0)
+{
+var r =Math.round(input);
+document.write("Result of Round" +"<br>");
+document.write(r + "<br>");
+document.write("Result of Floor" +"<br>");
+r= Math.floor(input);
+document.write(r + "<br>");
+document.write("Result of Ceil" +"<br>");
+r= Math.ceil(input);
+document.write(r);
+}
+else
+{
+alert("Please enter negative number");
+}
+</script>
+
+
+
+<script>
+var strng = prompt("Finding length");
+  var n = strng.length;
+document.write(n);
+
+</script>
+
+<script>
+var st = prompt("Input");
+var str2=st.charAt(st.length-1);
+document.write(str2);
+
+</script>
+
+
+<script>
+var index = "pakistani";
+  var n = index.indexOf("n");
+document.write(n);
+
+</script> 
+
+
+<script>
+//var a=Math.floor(Math.random())*7);
+//document.write(a);
+
+var coin =Math.ceil(Math.random()*3);
+if(coin==1)
+{
+document.write(coin + "tail" + "<br>");
+}
+else if(coin==2)
+{
+document.write(coin + "head" + "<br>");
+}
+
+</script>
+<script>
+var secret=Math.floor(Math.random()*11);
+var user=prompt("Enter guessing number");
+document.write("\nthe secret number" +secret);
+if (secret == user)
+{
+document.write("\n\ncongrats");
+}
+else
+{
+document.write("wrong");
+}
+</script>
+
+<script>
+const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+
+const d = new Date();
+document.write("The current month is " + monthNames[d.getMonth()]);
+const day = ["Monday", "Tuesday", "wednesday", "Thursday", "Friday", "Saturday",
+  "Sunday"];
+
+const day2 = new Date();
+var c= day[day2.getDay()];
+var str = c;
+var strFirstThree = str.substring(0,3);
+
+document.write(strFirstThree);
+var date=new Date();  
+var dayy=date.getDate();  
+var month=monthNames[d.getMonth()];  
+var year=date.getFullYear()-100;  
+document.write("<br>Date is: "+dayy+"/"+month+"/"+year);  
+</script>
+</body>
+</html>
